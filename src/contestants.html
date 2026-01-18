@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Contestants - Cooking Contest</title>
+</head>
+
+<body class="bg-white">
+    <include src="./views/header.html"></include>
+
+    <main class="py-12">
+        <div class="text-center mb-10 px-4">
+            <h1 class="text-4xl md:text-5xl font-bold text-black mb-4">Contestants</h1>
+            <p class="text-gray-400 text-lg">This section describes the recipes of the best contestants</p>
+        </div>
+
+        <div class="container mx-auto px-8 md:px-16 lg:px-24 mb-16 flex justify-center">
+            <img src="./assets/images/contestants.jpg" alt="Contestants sharing food"
+                class="w-full h-auto rounded-xl shadow-lg object-cover max-h-[500px] block">
+        </div>
+
+        <div class="container mx-auto px-8 md:px-16 lg:px-24">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-black mb-2">The recipes</h2>
+                <p class="text-gray-400">These are the recipes of the best contestants</p>
+            </div>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <include src="./views/recipe-card.html" locals='{
+          "recipeTitle": "Cajun seafood pasta",
+          "author": "John Cooper",
+          "avatar": "./assets/images/contestants.jpg",
+          "description": "This Cajun seafood pasta recipe is a hot one, but delicious!"
+        }'></include>
+
+                <include src="./views/recipe-card.html" locals='{
+          "recipeTitle": "Cedar planked salmon",
+          "author": "Marta Alonso",
+          "avatar": "./assets/images/contestants.jpg",
+          "description": "Salmon reaches its full potential when it is grilled on top of a cedar plank."
+        }'></include>
+
+                <include src="./views/recipe-card.html" locals='{
+          "recipeTitle": "Poulet au vinaigre",
+          "author": "Mary Ann Stones",
+          "avatar": "./assets/images/contestants.jpg",
+          "description": "Irresistible chicken, cooked with vinegar."
+        }'></include>
+
+            </section>
+        </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

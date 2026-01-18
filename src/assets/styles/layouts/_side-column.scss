@@ -1,0 +1,8 @@
+.side-column {
+  @apply hidden md:flex flex-col justify-center p-8 bg-uoc-black-bg text-uoc-masterbrand;
+
+  &__content {
+    @apply text-left leading-relaxed italic text-uoc-corporate;
+    
+  }
+}

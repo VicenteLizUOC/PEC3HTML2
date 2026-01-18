@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <title>Speakers - Jornadas Cocina Tradicional</title>
+</head>
+<body>
+  
+  <include src="./views/header.html"></include>
+
+  <main class="page-speakers">
+    <div class="container mx-auto px-8 md:px-16 lg:px-24">
+      
+      <h1 class="speakers__title text-center">Speakers Invitados</h1>
+      <p class="speakers__intro text-center">
+        Conoce a los seis chefs de renombre internacional que compartirán sus conocimientos y secretos de la cocina tradicional durante las jornadas.
+      </p>
+      
+      <section class="speaker-grid">
+        
+        <include src="./views/speaker-card.html" locals='{
+          "name": "Antonio Gómez",
+          "image": "./assets/images/chef1.jpeg",
+          "description": "Chef experto en técnicas ancestrales de fermentación y conservación de alimentos. Su trabajo se centra en la recuperación de ingredientes olvidados."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "name": "Elena Arzak",
+          "image": "./assets/images/chef6.jpg",
+          "description": "Maestra repostera especializada en dulces regionales. Combina la precisión moderna con las recetas transmitidas de generación en generación."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "name": "Javier Torres",
+          "image": "./assets/images/chef3.jpg",
+          "description": "Reconocido por su enfoque en la cocina de kilómetro cero y su compromiso con la sostenibilidad. Lidera varios proyectos de agricultura local."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "name": "Cristian Calvo",
+          "image": "./assets/images/chef4.jpg",
+          "description": "Investigador gastronómico y cocinero que explora las fusiones históricas entre la cocina mediterránea y la oriental."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "name": "Susi Díaz",
+          "image": "./assets/images/chef5.jpg",
+          "description": "Pionera en la adaptación de platos tradicionales para dietas contemporáneas, manteniendo siempre la esencia y el sabor original."
+        }'></include>
+
+        <include src="./views/speaker-card.html" locals='{
+          "name": "Pepe Rodríguez",
+          "image": "./assets/images/chef2.jpg",
+          "description": "Especialista en carnes y asados. Su restaurante es famoso por revivir los métodos lentos y artesanales de cocción a fuego abierto."
+        }'></include>
+        
+      </section>
+    </div>
+  </main>
+
+  <include src="./views/footer.html"></include>
+
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>

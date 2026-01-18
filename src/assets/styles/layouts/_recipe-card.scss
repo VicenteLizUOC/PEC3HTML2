@@ -1,0 +1,28 @@
+.recipe-card {
+  @apply bg-white p-6 rounded-lg shadow-md border border-gray-100 flex flex-col gap-4;
+
+  &__title {
+    @apply text-gray-800 font-bold text-lg;
+  }
+
+  &__avatar {
+    @apply w-10 h-10 rounded-full object-cover;
+  }
+
+  &__meta {
+    @apply flex items-start gap-3;
+  }
+
+  &__description {
+    @apply text-gray-500 text-xs leading-relaxed mt-1;
+  }
+
+  &__author-info {
+    @apply flex flex-col;
+  }
+
+
+  &__author-name {
+    @apply text-gray-900 font-bold text-sm;
+  }
+}

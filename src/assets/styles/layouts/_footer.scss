@@ -1,0 +1,8 @@
+.uoc-footer {
+  @apply bg-[#303030] py-6 mt-auto;
+
+
+  &__link {
+    @apply text-white no-underline text-sm;
+  }
+}

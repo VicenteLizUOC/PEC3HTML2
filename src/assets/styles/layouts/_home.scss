@@ -1,0 +1,20 @@
+.main-grid {
+  @apply block md:grid md:grid-cols-[2fr_1fr] w-full items-stretch;
+}
+
+.poster-wrapper {
+  @apply relative w-full bg-cover bg-center bg-no-repeat text-white text-center bg-fixed;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/food-poster.jpg");
+}
+
+.uoc-title {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.poster-grid {
+  @apply mt-12 mb-12 flex flex-wrap justify-center gap-6 md:grid md:grid-cols-[repeat(auto-fit,minmax(150px,1fr))];
+
+  &__item {
+    @apply bg-white/90 text-uoc-corporate p-8 rounded-lg font-medium shadow-lg flex items-center justify-center;
+  }
+}

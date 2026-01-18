@@ -1,0 +1,17 @@
+// @use "../variables";
+
+.page-speakers {
+  @apply min-h-screen bg-uoc-black-bg py-12;
+}
+
+.speakers__title {
+  @apply text-uoc-corporate font-serif text-4xl font-bold mb-4;
+}
+
+.speakers__intro {
+  @apply text-uoc-masterbrand max-w-2xl mx-auto text-lg mb-12;
+}
+
+.speaker-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4;
+}
